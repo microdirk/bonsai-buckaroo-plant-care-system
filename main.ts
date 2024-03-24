@@ -1,5 +1,6 @@
 let reading = 0
 music.startMelody(music.builtInMelody(Melodies.Entertainer), MelodyOptions.Once)
+led.setBrightness(6)
 basic.forever(function () {
     reading = pins.analogReadPin(AnalogPin.P1)
     led.plotBarGraph(
@@ -12,8 +13,9 @@ basic.forever(function () {
     if (reading < 500) {
         music.playTone(262, music.beat(BeatFraction.Whole))
         pins.digitalWritePin(DigitalPin.P2, 1)
-        basic.pause(500)
+        basic.pause(700)
         pins.digitalWritePin(DigitalPin.P2, 0)
     }
+    pins.digitalWritePin(DigitalPin.P1, 0)
     basic.pause(1000)
 })
