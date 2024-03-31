@@ -10,10 +10,10 @@ basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
         basic.showNumber(reading)
     }
-    if (reading < 680) {
+    if (reading < 710) {
         music.playTone(262, music.beat(BeatFraction.Whole))
         pins.digitalWritePin(DigitalPin.P2, 1)
-        basic.pause(600)
+        basic.pause(670)
         pins.digitalWritePin(DigitalPin.P2, 0)
     }
     pins.digitalWritePin(DigitalPin.P1, 0)
