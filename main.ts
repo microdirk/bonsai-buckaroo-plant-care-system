@@ -12,7 +12,7 @@ basic.forever(function () {
     }
     if (reading < 650) {
         pins.digitalWritePin(DigitalPin.P2, 1)
-        basic.pause(670)
+        basic.pause(850)
         pins.digitalWritePin(DigitalPin.P2, 0)
     }
     pins.digitalWritePin(DigitalPin.P1, 0)
