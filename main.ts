@@ -10,7 +10,7 @@ basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
         basic.showNumber(reading)
     }
-    if (reading < 580) {
+    if (reading < 680) {
         pins.digitalWritePin(DigitalPin.P2, 1)
         basic.pause(860)
         pins.digitalWritePin(DigitalPin.P2, 0)
