@@ -6,7 +6,7 @@ basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
         basic.showNumber(reading)
     }
-    if (reading < 350) {
+    if (reading < 250) {
         basic.showLeds(`
             . . . . .
             . # . # .
@@ -27,5 +27,5 @@ basic.forever(function () {
             `)
     }
     pins.digitalWritePin(DigitalPin.P1, 0)
-    basic.pause(5000)
+    basic.pause(2500)
 })
