@@ -6,7 +6,7 @@ basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
         basic.showNumber(reading)
     }
-    if (reading < 250) {
+    if (reading < 190) {
         basic.showLeds(`
             . . . . .
             . # . # .
